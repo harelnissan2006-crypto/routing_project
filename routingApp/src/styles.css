@@ -1,0 +1,26 @@
+/* Global styles: red/blue background and base text color */
+html, body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	/* Diagonal gradient from red to blue */
+	background: linear-gradient(135deg, #b20020 0%, #003a8c 100%);
+	color: #ffffff;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Make sure app container has some breathing room */
+app-root, #app-root {
+	display: block;
+	min-height: 100%;
+}
+
+/* Links default to light color */
+a { color: #ffefef; text-decoration: none }
+a:hover { text-decoration: underline }
+
+/* Utility container centered */
+.container { max-width: 1100px; margin: 0 auto; padding: 12px }

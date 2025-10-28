@@ -1,0 +1,12 @@
+<h2>{{ text }}</h2>
+
+<section class="matches">
+	<div class="match" *ngFor="let date of dates; let i = index">
+		<div class="match-row">
+			<div class="match-date">{{ date }}</div>
+			<div class="match-stadium">{{ stadiums[i] }}</div>
+			<div class="match-result">Result: <strong>{{ results[i] }}</strong></div>
+			<div class="match-motm">MOTM: {{ motms[i] }}</div>
+		</div>
+	</div>
+</section>

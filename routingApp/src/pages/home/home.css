@@ -1,0 +1,33 @@
+/* Simple styling for the matches list */
+.matches {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.match {
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.match-row {
+	display: grid;
+	grid-template-columns: 140px 1fr 120px 160px;
+	gap: 12px;
+	align-items: center;
+}
+
+.match-date { font-weight: 600; color: #222 }
+.match-stadium { color: #444 }
+.match-result { color: #0a6; }
+.match-motm { color: #555; font-style: italic }
+
+@media (max-width: 640px) {
+	.match-row {
+		grid-template-columns: 1fr;
+		grid-auto-rows: auto;
+	}
+}

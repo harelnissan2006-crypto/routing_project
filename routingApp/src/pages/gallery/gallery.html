@@ -1,0 +1,10 @@
+<section class="gallery-page">
+	<h2>Stadiums Gallery</h2>
+
+	<div class="gallery-grid">
+		<figure *ngFor="let img of images">
+			<img [src]="img.src" [alt]="img.alt" />
+			<figcaption>{{ img.caption }}</figcaption>
+		</figure>
+	</div>
+</section>

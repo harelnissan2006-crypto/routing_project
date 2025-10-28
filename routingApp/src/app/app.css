@@ -1,0 +1,35 @@
+.main-nav {
+	display: flex;
+	gap: 18px;
+	align-items: center;
+	padding: 10px 14px;
+	margin: 12px 0 18px 0;
+	border-radius: 8px;
+	/* subtle translucent background so nav stands out over the gradient */
+	background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+	border: 1px solid rgba(255,255,255,0.08);
+}
+
+.main-nav a {
+	color: #fff;
+	padding: 6px 10px;
+	border-radius: 6px;
+	transition: background 160ms ease, transform 120ms ease;
+}
+
+.main-nav a:hover {
+	background: rgba(255,255,255,0.08);
+	transform: translateY(-1px);
+}
+
+.main-nav a.active {
+	background: rgba(255,255,255,0.12);
+	font-weight: 700;
+}
+
+.page-content { padding-bottom: 24px }
+
+/* Make content blocks readable over the background */
+router-outlet, .page-content, .container {
+	color: #fff;
+}
