@@ -1,9 +1,10 @@
 <h2>{{ title }}</h2>
-<section class="cabinet-page">
-    <div class="cabinet-trophies">
-        <div class="trophy" *ngFor="let trophy of trophies">
-            <h3>{{ trophy.name }}</h3>
-            <p>Count: {{ trophy.count }}</p>
-        </div>
-    </div>
+<nav class="cabinet-nav">
+    <a routerLink="." routerLinkActive="active">Overview </a>
+    <a routerLink="cwc" routerLinkActive="active"> FIFA Club World Cup (CWC) </a>
+    <a routerLink="ucl" routerLinkActive="active"> UEFA Champions League (UCL)</a>
+</nav>
+
+<section class="cabinet-child">
+    <router-outlet></router-outlet>
 </section>
